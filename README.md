@@ -13,10 +13,10 @@ Make sure to create a C:/temp folder and place..
 - C:\temp\drivers
 
 ..into it 
-:white_medium_square: Download and extract all needed drivers into C:\temp\drivers
-:white_medium_square: if needed place all hotfixes (.msu) into C:\temp\hotfix
-:white_medium_square: make sure you have oscdimg installed :warning:
-:white_medium_square: lastly make sure to copy all files and folders from your ISO into src 
+- Download and extract all needed drivers into C:\temp\drivers
+- if needed place all hotfixes (.msu) into C:\temp\hotfix
+- make sure you have oscdimg installed :warning:
+- lastly make sure to copy all files and folders from your ISO into src 
 
 :tulip: Now just run the Batch file with elevated rights and enjoy <3
 
