@@ -27,15 +27,12 @@ echo.
 call :colorEcho 0C " === MAKE SURE YOU RUN THIS SCRIPT WITH ADMIN PRIV ==="
 echo.
 echo.
-setlocal
-:PROMPT
-SET /P AREYOUSURE=Are you sure (Y)?
-IF /I "%AREYOUSURE%" NEQ "Y" GOTO NEXT
+pause
 
 
 :NEXT
 echo.
-call :colorEcho 0E "Modifying Images.."
+call :colorEcho 0E "======= Modifying Images ======="
 echo.
 echo.
 dism /Mount-Wim /WimFile:c:\temp\src\sources\boot.wim /Index:1 /MountDir:c:\temp\mount
@@ -58,10 +55,13 @@ echo.
 echo C ^> temp ^> src ^> sources
 echo.
 echo.
-:PROMPT
-SET /P AREYOUSURE=Ready to Continue? (Y)?
-IF /I "%AREYOUSURE%" NEQ "Y" GOTO B
+:P2
+SET /P AREYOUSURE=Ready to Continue? (Y)? 
+IF /I "%AREYOUSURE%" == "Y" GOTO B
 echo.
+call :colorEcho 0C " INVALID ARGUMENT"
+echo. 
+GOTO P2
 
 :B
 dism /Unmount-Wim /MountDir:C:\temp\mount /commit
@@ -76,7 +76,7 @@ dism /Unmount-Wim /MountDir:C:\temp\winremount /Commit
 dism /Unmount-Wim /MountDir:C:\temp\mount /Commit
 echo.
 echo.
-call :colorEcho 0E "Packing ISO.."
+call :colorEcho 0E "======= Packing ISO ======="
 echo.
 echo.
 oscdimg.exe -bC:\temp\src\efi\microsoft\boot\efisys.bin -u2 -udfver102 C:\temp\src\ C:\temp\Win7_image.iso
@@ -86,6 +86,11 @@ call :colorEcho 0E "Done!"
 echo.
 call :colorEcho DF "script made by zoe!"
 echo.
+echo.
+echo.
+pause
+
+exit
 
 :colorEcho
 @echo off 
