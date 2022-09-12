@@ -20,6 +20,9 @@ Make sure to create a C:/temp folder and place..
 
 :tulip: Now just run the Batch file with elevated rights and enjoy <3
 
+when chould this be useful? 
+> Eg: Windows 7 ISO's dont have USB 3.0 support in the installer by default you can inject the drivers for them to make the install process more bareable
+
 
 
 
