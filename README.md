@@ -1,9 +1,11 @@
-# ```██████╗ ██████╗ ██╗██╗   ██╗███████╗██████╗ ██████╗ ██╗███████╗ ██████╗      ████████╗      
+#Driver2ISO
+
+A simple script that injects Drivers into a Windows Recovery ISO :octocat:
+ ```██████╗ ██████╗ ██╗██╗   ██╗███████╗██████╗ ██████╗ ██╗███████╗ ██████╗      ████████╗      
 ██╔══██╗██╔══██╗██║██║   ██║██╔════╝██╔══██╗╚════██╗██║██╔════╝██╔═══██╗   ████████ ███║
 ██║  ██║██████╔╝██║██║   ██║█████╗  ██████╔╝ █████╔╝██║███████╗██║   ██║   █████  █████║
 ██║  ██║██╔══██╗██║╚██╗ ██╔╝██╔══╝  ██╔══██╗██╔═══╝ ██║╚════██║██║   ██║   ███ ████████║
-██████╔╝██║  ██║██║ ╚████╔╝ ███████╗██║  ██║███████╗██║███████║╚██████╔╝    ╚████████╔╝```Driver2ISO
-A simple script that injects Drivers into a Windows Recovery ISO :octocat:
+██████╔╝██║  ██║██║ ╚████╔╝ ███████╗██║  ██║███████╗██║███████║╚██████╔╝    ╚████████╔╝```
 
 > This Project is based off and automates this Documentation
 https://www.dell.com/support/kbdoc/en-ca/000112190/how-to-install-windows-7-on-systems-with-skylake-chipset
